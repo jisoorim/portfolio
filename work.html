@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="임지수" />
+    <meta name="description" content="웹 퍼블리셔 임지수 포트폴리오" />
+    <meta name="email" content="soorim.coding.kr@gmail.com" />
+    <meta
+      name="keywords"
+      content="웹 퍼블리셔, 퍼블리셔, 퍼블리싱, UI 개발자, html, css, jquery, javascript, 웹표준, 웹접근성, 반응형웹, mobile, w3c, 크로스 브라우징, 웹디자인, html5, css3, react, es6"
+    />
+    <meta name="copyright" content="2022. Soorim All Right Reserverd" />
+
+    <meta property="og:author" content="임지수" />
+    <meta property="og:description" content="웹 퍼블리셔 임지수 포트폴리오" />
+    <meta property="og:email" content="soorim.coding.kr@gmail.com" />
+    <meta
+      property="og:keywords"
+      content="웹 퍼블리셔, 퍼블리셔, 퍼블리싱, UI 개발자, html, css, jquery, javascript, 웹표준, 웹접근성, 반응형웹, mobile, w3c, 크로스 브라우징, 웹디자인, html5, css3, react, es6"
+    />
+    <meta property="og:copyright" content="2022. Soorim All Right Reserverd" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/work.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/89a04b355d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Soorim Portfolio</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="gnb">
+        <a href="#menu" id="menuToggle" title="메뉴 토글 버튼"><span></span></a>
+        <!-- <ul class="lnb">
+          <li>
+            <a
+              title="깃허브 바로가기"
+              href="https://github.com/soorim-coding-kr"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              title="노션 바로가기"
+              href="https://ambitious-sprint-b28.notion.site/study-3a97c96eb889489896246f670a3aab5b"
+              target="_blank"
+            >
+              <i class="fa-solid fa-n"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              title="코딩컨벤션 보러가기"
+              href="http://soorim-coding.co.kr/coding-convention.pdf"
+              target="_blank"
+            >
+              <i class="fa-solid fa-book"></i>
+            </a>
+          </li>
+        </ul> -->
+        <div id="menu" class="menu">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main id="contents" class="main">
+      <div class="container">
+        <section id="work" class="work">
+          <h2 class="tit">Work</h2>
+          <ul class="work-tabs">
+            <li class="work-tab active" onclick="tabs(event, 'company')">
+              <h3 class="sub-tit">Company</h3>
+            </li>
+            <li class="work-tab" onclick="tabs(event, 'personal')">
+              <h3 class="sub-tit">Personal</h3>
+            </li>
+            <li class="career-desc">
+              <a
+                href="https://ambitious-sprint-b28.notion.site/6d42fef6a8d84a388971c9b17ed28127"
+                title="경력기술서 보러가기"
+                targe="_blank"
+              >
+                경력기술서 Link
+                <i class="fa-solid fa-link"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="tab-contents">
+            <div class="tab-content" id="company">
+              <div class="work-grp-desc" id="dunamu">
+                <b class="company">두나무</b>
+                <span class="period">2022.10 ~ 2025.04</span>
+              </div>
+              <div class="work-grp dunamu">
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="버그바운티 페이지 바로가기"
+                      href="https://bugbounty.upbit.com/"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">버그바운티</h4>
+                    <p class="item-desc">
+                      UI 개발 100% <br />
+                      HTML5, CSS, Javascript <br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="업비트 바로가기"
+                      href="https://upbit.com/home"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">업비트</h4>
+                    <p class="item-desc">
+                      Download Link -
+                      <b>
+                        <a
+                          title="앱스토어 다운로드"
+                          href="https://apps.apple.com/kr/app/%EC%97%85%EB%B9%84%ED%8A%B8-%EA%B0%80%EC%9E%A5-%EC%8B%A0%EB%A2%B0%EB%B0%9B%EB%8A%94-%EB%94%94%EC%A7%80%ED%84%B8-%EC%9E%90%EC%82%B0-%EA%B1%B0%EB%9E%98%EC%86%8C/id1256371195"
+                          >IOS</a
+                        >
+                        /
+                        <a
+                          title="플레이스토어 다운로드"
+                          href="https://play.google.com/store/apps/details?id=com.dunamu.exchange&hl=ko"
+                          >Android</a
+                        > </b
+                      ><br />
+                      PC 웹 UI 개발 및 유지보수 <br />
+                      HTML5, SCSS<br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="증권플러스 바로가기"
+                      href="https://stockplus.com/m"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">증권플러스</h4>
+                    <p class="item-desc">
+                      Download Link -
+                      <b>
+                        <a
+                          title="앱스토어 다운로드"
+                          href="https://apps.apple.com/kr/app/%EC%A6%9D%EA%B6%8C%ED%94%8C%EB%9F%AC%EC%8A%A4-%EB%AA%A8%EB%93%A0-%ED%88%AC%EC%9E%90-%EC%A0%95%EB%B3%B4%EB%A5%BC-%ED%95%9C-%EA%B3%B3%EC%97%90%EC%84%9C/id913934976"
+                          >IOS</a
+                        >
+                        /
+                        <a
+                          title="플레이스토어 다운로드"
+                          href="https://play.google.com/store/apps/details?id=com.dunamu.stockplus&hl=ko"
+                          >Android</a
+                        > </b
+                      ><br />
+                      웹, 인앱 웹뷰 UI 개발 및 유지보수 <br />
+                      HTML5, CSS, SCSS, Javascript, React, TypeScript <br />
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="work-grp-desc" id="starlabs">
+                <b class="company">스타랩스</b>
+                <span class="period">2020.04 ~ 2022.10</span>
+              </div>
+              <div class="work-grp starlabs">
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="SKT 마켓플레이스 구매자포털 바로가기"
+                      href="https://www.sktcloudmarketplace.com/"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">SKT Marketplace</h4>
+                    <p class="item-desc">
+                      UI 개발 90%<br />반응형<br />
+                      Vue, HTML5, SCSS <br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="SKT 마켓플레이스 판매자 사이트 바로가기"
+                      href="https://seller.sktcloudmarketplace.com/"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">SKT Marketplace (Seller)</h4>
+                    <p class="item-desc">
+                      UI 개발 100%<br />반응형<br />Vue, HTML5, SCSS
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="서울대학교 공과대학 최고산업전략과정 사이트 바로가기"
+                      href="https://aip.snu.ac.kr/"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">
+                      서울대학교 공과대학 최고산업전략과정
+                    </h4>
+                    <p class="item-desc">
+                      UI 개발 100%<br />고정형<br />HTML5, CSS, Javascript,
+                      PHP(개발 완료된 페이지 커스텀)
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="비뇨내시경 의료기술학회 사용자 사이트 바로가기"
+                      href="https://cluesurology.org/"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">비뇨내시경 의료기술학회</h4>
+                    <p class="item-desc">
+                      UI 개발 100%<br />반응형<br />React, HTML5, SCSS+Styled
+                      Component, Javascript(ES6)
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img"></div>
+                  <div class="work-detail">
+                    <h4 class="item-name">비뇨내시경 의료기술학회 (Admin)</h4>
+                    <p class="item-desc">
+                      UI 개발 100%<br />고정형 (PC)<br />React, HTML5,
+                      SCSS+Styled Component, Javascript(ES6)
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="전기차 충전 솔루션 사이트 바로가기"
+                      href="https://www.chabap.com"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">Chabap 전기차 충전</h4>
+                    <p class="item-desc">
+                      UI 개발 100%<br />반응형<br />React, HTML5, SCSS+Styled
+                      Component, Javascript(ES6)<br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="태양광 충전 솔루션 사이트 바로가기"
+                      href="http://eblabs.co.kr/"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">EBLABS 태양광 에너지</h4>
+                    <p class="item-desc">
+                      UI 개발 100%<br />반응형<br />React, HTML5, SCSS+Styled
+                      Component, Javascript(ES6) <br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="스타랩스 소개 사이트 바로가기"
+                      href="https://www.starlabs.co.kr/"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">STARLABS 홈페이지 리뉴얼</h4>
+                    <p class="item-desc">
+                      UI 개발 80%<br />반응형<br />Word Press, HTML5, CSS,
+                      Javascript, Jquery, FTP 클라이언트
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="실크로드 웹 호스팅 사이트 바로가기"
+                      href="https://silkroad.starlabs.co.kr/"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">Silkroad 웹 호스팅</h4>
+                    <p class="item-desc">
+                      UI 개발 100%<br />반응형<br />React, HTML5, SCSS+Styled
+                      Component, Javascript(ES6) <br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="글로벌 아그로 네트워크 바로가기"
+                      href="https://globalagronetwork.com/"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">글로벌 아그로 네트워크</h4>
+                    <p class="item-desc">
+                      UI 개발 100%, UI 디자인 100%<br />반응형<br />Word Press,
+                      HTML5, CSS, Javascript <br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img no-hover"></div>
+                  <div class="work-detail">
+                    <h4 class="item-name">Billing System</h4>
+                    <p class="item-desc">
+                      UI 개발 100%, UI 디자인 100% <br />반응형<br />React,
+                      HTML5, SCSS + Styled Component, Javascript(ES6) <br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img no-hover"></div>
+                  <div class="work-detail">
+                    <h4 class="item-name">Pickle 사내 근태관리 앱</h4>
+                    <p class="item-desc">
+                      Download Link -
+                      <b>
+                        <a
+                          title="앱스토어 다운로드"
+                          href="https://apps.apple.com/kr/app/%ED%94%BD%ED%81%B4/id1518522596"
+                          >IOS</a
+                        >
+                        /
+                        <a
+                          title="플레이스토어 다운로드"
+                          href="https://play.google.com/store/apps/details?id=kr.co.starlabs.tna"
+                          >Android</a
+                        > </b
+                      ><br />
+                      UI 개발 100%, WebView 앱 UI 디자인 100%
+                      <br />
+                      React, HTML5, SCSS+Styled Component, Javascript(ES6)
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tab-content" id="personal">
+              <div class="work-grp">
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="Apple Clone"
+                      href="personal-work/apple-clone/study.html"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">Apple Clone</h4>
+                    <p class="item-desc">
+                      HTML5, CSS, Javascript
+                      <br />
+                      애플 웹 사이트의 핵심 비디오 인터랙션 구현 (canvas 활용)
+                      <br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="SVG Animation"
+                      href="personal-work/cursor/study.html"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">SVG Animation</h4>
+                    <p class="item-desc">
+                      HTML5, CSS, Javascript
+                      <br />
+                      SVG 그래픽을 활용한 마우스를 따라다니는 스크립트
+                      애니메이션
+                      <br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="3D 리플릿"
+                      href="personal-work/3d-leaflet/index.html"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">3D 리플릿</h4>
+                    <p class="item-desc">
+                      HTML5, CSS, Javascript
+                      <br />3D 리플릿 인터랙션 구현<br />
+                    </p>
+                  </div>
+                </article>
+
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="Animated Navigation"
+                      href="personal-work/animated-nav/index.html"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">Animated Navigation</h4>
+                    <p class="item-desc">
+                      HTML5, CSS, Javascript
+                      <br />
+                      부드러운 애니메이션의 메뉴바 구현
+                      <br />
+                    </p>
+                  </div>
+                </article>
+
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="3D Card"
+                      href="personal-work/3d-movingcard/index.html"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">3D Card</h4>
+                    <p class="item-desc">
+                      HTML5, CSS, Javascript
+                      <br />
+                      마우스 위치에 따라 움직이는 3D 카드
+                      <br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="Random Motion"
+                      href="personal-work/card-particle/particle.html"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">Random Motion</h4>
+                    <p class="item-desc">
+                      HTML5, CSS, Javascript
+                      <br />
+                      TweenMax 플러그인을 활용한 랜덤 모션
+                      <br />
+                    </p>
+                  </div>
+                </article>
+                <article class="work-item">
+                  <div class="work-img">
+                    <a
+                      class="hover"
+                      title="LP Player"
+                      href="personal-work/cd-player/sample.html"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
+                  <div class="work-detail">
+                    <h4 class="item-name">LP Player</h4>
+                    <p class="item-desc">
+                      HTML5, CSS, Javascript
+                      <br />
+                      LP Player 인터랙션
+                      <br />
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <p>Copyright 2025. Soorim All Right Reserverd</p>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/tab.js"></script>
+  </body>
+</html>

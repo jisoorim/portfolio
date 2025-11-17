@@ -1,0 +1,240 @@
+@charset 'utf-8';
+
+.work {
+  padding: 80px 0;
+}
+.work-tabs {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  margin: 16px 0;
+  padding-bottom: 16px;
+}
+.work-tabs .work-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-weight: 500;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+.work-tabs .work-tab ~ .work-tab {
+  margin-left: 16px;
+}
+.work-tabs .work-tab:hover {
+  color: #666;
+}
+.work-tabs .work-tab.active {
+  color: #444;
+  position: relative;
+}
+.work-tabs .work-tab.active::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #555;
+}
+.work .career-desc {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #eaeaea;
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.work .career-desc a {
+  text-decoration: none;
+}
+.work .career-desc:hover {
+  transform: translateY(-5px) rotate(-3deg);
+  background: #ccc;
+}
+
+.work .work-grp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+#personal {
+  display: none;
+}
+.work .work-grp-desc {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 2px 24px;
+}
+
+.work .work-grp-desc .company {
+  font-size: 20px;
+}
+.work .work-grp-desc .period {
+  font-size: 14px;
+  color: #888;
+}
+
+.work .work-grp .work-item {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+.work .work-grp .work-item .work-img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  transition: background-size 0.5s;
+}
+.work .work-grp .work-item .work-img:hover {
+  background-size: 200%;
+}
+
+.work #company .work-grp .work-item.work-img {
+  background-position: center 0%;
+}
+
+.work #company .work-grp.dunamu .work-item:nth-child(1) .work-img {
+  background-image: url("../img/img_dunamu1.png");
+}
+.work #company .work-grp.dunamu .work-item:nth-child(2) .work-img {
+  background-image: url("../img/img_dunamu2.webp");
+}
+.work #company .work-grp.dunamu .work-item:nth-child(3) .work-img {
+  background-image: url("../img/img_dunamu3.jpg");
+}
+
+.work #company .work-grp.starlabs .work-item:nth-child(1) .work-img {
+  background-image: url("../img/img_starlabs1.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(2) .work-img {
+  background-image: url("../img/img_starlabs2.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(3) .work-img {
+  background-image: url("../img/img_starlabs3.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(4) .work-img {
+  background-image: url("../img/img_starlabs4.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(5) .work-img {
+  background-image: url("../img/img_starlabs5.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(6) .work-img {
+  background-image: url("../img/img_starlabs6.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(7) .work-img {
+  background-image: url("../img/img_starlabs7.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(8) .work-img {
+  background-image: url("../img/img_starlabs8.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(9) .work-img {
+  background-image: url("../img/img_starlabs9.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(10) .work-img {
+  background-image: url("../img/img_starlabs10.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(11) .work-img {
+  background-image: url("../img/img_starlabs11.jpg");
+}
+.work #company .work-grp.starlabs .work-item:nth-child(12) .work-img {
+  background-image: url("../img/img_starlabs12.jpg");
+}
+.work #personal.work-grp .work-item .work-img {
+  background-position: center 30%;
+}
+.work #personal .work-grp .work-item:nth-child(1) .work-img {
+  background-image: url("../img/img_pwork3.jpg");
+}
+.work #personal .work-grp .work-item:nth-child(2) .work-img {
+  background-image: url("../img/img_pwork4.jpg");
+}
+.work #personal .work-grp .work-item:nth-child(3) .work-img {
+  background-image: url("../img/img_pwork1.jpg");
+}
+.work #personal .work-grp .work-item:nth-child(4) .work-img {
+  background-image: url("../img/img_pwork2.jpg");
+}
+.work #personal .work-grp .work-item:nth-child(5) .work-img {
+  background-image: url("../img/img_pwork7.jpg");
+}
+.work #personal .work-grp .work-item:nth-child(6) .work-img {
+  background-image: url("../img/img_pwork8.jpg");
+}
+.work #personal .work-grp .work-item:nth-child(7) .work-img {
+  background-image: url("../img/img_pwork9.jpg");
+}
+.work .work-grp .work-item .work-img:hover .hover {
+  opacity: 1;
+}
+.work .work-grp .work-item .work-img .hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.work .work-grp .work-item .work-detail {
+  width: 100%;
+  padding: 16px;
+}
+.work .work-grp .work-item .work-detail .item-name {
+  word-break: keep-all;
+}
+.work .work-grp .work-item .work-detail .item-desc {
+  word-break: keep-all;
+  margin-top: 8px;
+  text-align: left;
+  color: #555;
+}
+.work .work-grp .work-item .work-detail .item-desc a {
+  color: #444;
+}
+.company-tit {
+  font-size: 22px;
+}
+@media screen and (max-width: 800px) {
+  .work-tabs {
+    justify-content: center;
+    margin: 16px 0 68px;
+    padding-bottom: 32px;
+  }
+  .work .career-desc {
+    top: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 8px 16px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .work .career-desc:hover {
+    transform: translateY(-5px) translateX(50%) rotate(-3deg);
+  }
+  .work .career-desc span {
+    display: none;
+  }
+  .work .work-grp {
+    grid-template-columns: 1fr;
+  }
+}

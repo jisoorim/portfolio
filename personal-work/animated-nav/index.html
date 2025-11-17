@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>active navigation</title>
+		<link rel="stylesheet" href="activeNav.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+			integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<script
+			src="https://kit.fontawesome.com/89a04b355d.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<main class="main">
+			<div class="contents">
+				<div id="tab1" class="content target">
+					<h1>Cookie</h1>
+				</div>
+				<div id="tab2" class="content">
+					<h1>Gift</h1>
+				</div>
+				<div id="tab3" class="content">
+					<h1>Carrot</h1>
+				</div>
+				<div id="tab4" class="content">
+					<h1>Kiwi</h1>
+				</div>
+			</div>
+		</main>
+		<div class="navigation">
+			<ul>
+				<li class="list active" data-tab="tab1">
+					<a
+						><span class="icon"><i class="fa-solid fa-cookie-bite"></i></span
+						><span class="text cookie">Cookie</span></a
+					>
+				</li>
+
+				<li class="list" data-tab="tab2">
+					<a
+						><span class="icon"><i class="fa-solid fa-gift"></i></span
+						><span class="text gift">Gift</span></a
+					>
+				</li>
+				<li class="list" data-tab="tab3">
+					<a
+						><span class="icon"><i class="fa-solid fa-carrot"></i></span
+						><span class="text carrot">Carrot</span></a
+					>
+				</li>
+				<li class="list" data-tab="tab4">
+					<a
+						><span class="icon"><i class="fa-solid fa-kiwi-bird"></i></span
+						><span class="text kiwi">Kiwi</span></a
+					>
+				</li>
+				<div class="indicator"></div>
+			</ul>
+		</div>
+
+		<script>
+			// const list = document.querySelectorAll('.list');
+			// function activeNav() {
+			// 	list.forEach(item => item.classList.remove('active'));
+			// 	this.classList.add('active');
+			// }
+			// list.forEach(item => item.addEventListener('click', activeNav));
+			const tabItem = document.querySelectorAll('.list');
+			const tabContent = document.querySelectorAll('.content');
+
+			tabItem.forEach(item => {
+				item.addEventListener('click', tabHandler);
+			});
+
+			function tabHandler(item) {
+				const tabTarget = item.currentTarget;
+				console.log(tabTarget, 'tabTarbat');
+				const target = tabTarget.dataset.tab;
+				tabItem.forEach(title => {
+					title.classList.remove('active');
+				});
+				tabContent.forEach(target => {
+					target.classList.remove('target');
+				});
+				document.querySelector('#' + target).classList.add('target');
+				tabTarget.classList.add('active');
+			}
+			tabTarget.forEach(item => item.addEventListener('click', activeNav));
+		</script>
+	</body>
+</html>
