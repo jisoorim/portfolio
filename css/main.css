@@ -124,6 +124,7 @@
   transition: all 0.2s;
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap;
 }
 .career .career-item .btn-detail:hover {
   transform: translateY(-5px) rotate(-3deg);
